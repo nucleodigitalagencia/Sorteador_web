@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* 1. Basic Page Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* 2. Top Red Bar */
+        .top-bar {
+            background-color: #7ADAA5; /* Red color */
+            width: 100%;
+            text-align: center; /* Centers the logo */
+            padding: 40px 0;    /* Vertical padding around logo */
+        }
+
+        /* 3. Logo Styling */
+        .top-bar img {
+            max-height: 80px; /* Limits logo height so it fits well */
+            max-width: 90%;   /* Prevents it from being wider than screen */
+            display: inline-block;
+        }
+
+        /* 4. Text Container (Centered Column) */
+        .content-container {
+            max-width: 700px;  /* Limits width for readability */
+            margin: 0 auto;    /* Centers the container horizontally */
+            padding: 40px 20px;
+            color: #000000;    /* Black text */
+        }
+
+        /* 5. The Magic "Raw Text" Styler */
+        .legal-text {
+            line-height: 1.6;      /* Makes it readable */
+            font-size: 16px;
+        }
+        
+        /* Optional: Makes headings look bold even in raw text if you use CAPS */
+        .legal-text strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR WITH LOGO -->
+    <div class="top-bar">
+        <!-- REPLACE 'logo.png' WITH YOUR ACTUAL IMAGE FILENAME -->
+        <img src="logo.png" alt="Sorteador Logo">
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content-container">
+        <div class="legal-text">
+<!-- 
+-----------------------------------------------------------------------
+PASTE YOUR RAW TEXT BELOW THIS LINE. 
+Do not worry about <p> tags. 
+Just hit "Enter" twice to make a paragraph gap.
+-----------------------------------------------------------------------
+-->
+
+
+
+<!-- END OF TEXT AREA -->
+        </div>
+    </div>
+
+</body>
+</html>
