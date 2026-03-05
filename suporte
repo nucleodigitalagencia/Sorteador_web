@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* 1. Basic Page Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* 2. Top Red Bar */
+        .top-bar {
+            background-color: #7ADAA5; /* Red color */
+            width: 100%;
+            text-align: center; /* Centers the logo */
+            padding: 40px 0;    /* Vertical padding around logo */
+        }
+
+        /* 3. Logo Styling */
+        .top-bar img {
+            max-height: 80px; /* Limits logo height so it fits well */
+            max-width: 90%;   /* Prevents it from being wider than screen */
+            display: inline-block;
+        }
+
+        /* 4. Text Container (Centered Column) */
+        .content-container {
+            max-width: 700px;  /* Limits width for readability */
+            margin: 0 auto;    /* Centers the container horizontally */
+            padding: 40px 20px;
+            color: #000000;    /* Black text */
+        }
+
+        /* 5. The Magic "Raw Text" Styler */
+        .legal-text {
+            line-height: 1.6;      /* Makes it readable */
+            font-size: 16px;
+        }
+        
+        /* Optional: Makes headings look bold even in raw text if you use CAPS */
+        .legal-text strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR WITH LOGO -->
+    <div class="top-bar">
+        <!-- REPLACE 'logo.png' WITH YOUR ACTUAL IMAGE FILENAME -->
+        <img src="logo.png" alt="Sorteador Logo">
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content-container">
+        <div class="legal-text">
+<!-- 
+-----------------------------------------------------------------------
+PASTE YOUR RAW TEXT BELOW THIS LINE. 
+Do not worry about <p> tags. 
+Just hit "Enter" twice to make a paragraph gap.
+-----------------------------------------------------------------------
+-->
+<h1>Excluir minha conta (solicitação via web)</h1>
+
+<p>Se você deseja excluir sua conta no <em>Sorteador</em>, use a opção abaixo para enviar uma solicitação formal. Para que possamos identificar e processar corretamente o pedido, inclua as informações mínimas solicitadas. </p>
+
+<h2>Como solicitar</h2>
+
+<p>Envie um e-mail para <a href="mailto:privacidade@sorteador.app.br?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta&body=Por%20favor%2C%20preencha%20os%20dados%20abaixo%20para%20solicitar%20a%20exclus%C3%A3o%20de%20conta%3A%0A%0A- %20Nome%20completo%3A%0A- %20E-mail%20cadastrado%3A%0A- %20ID%20da%20Conta%20(se%20souber)%3A%0A- %20Motivo%20(opcional)%3A%0A%0AConfirmo%20que%20sou%20o%20titular%20da%20conta%20e%20autorizo%20a%20exclus%C3%A3o.">privacidade@sorteador.app.br</a> ou clique no botão abaixo para abrir seu cliente de e-mail com um modelo pronto.</p>
+
+<p>
+  <a href="mailto:privacidade@sorteador.app.br?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta&body=Por%20favor%2C%20preencha%20os%20dados%20abaixo%20para%20solicitar%20a%20exclus%C3%A3o%20de%20conta%3A%0A%0A- %20Nome%20completo%3A%0A- %20E-mail%20cadastrado%3A%0A- %20ID%20da%20Conta%20(se%20souber)%3A%0A- %20Motivo%20(opcional)%3A%0A%0AConfirmo%20que%20sou%20o%20titular%20da%20conta%20e%20autorizo%20a%20exclus%C3%A3o." style="display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;background:#7ADAA5;color:#fff;font-weight:600;">Enviar e-mail para excluir minha conta</a>
+</p>
+
+<h2>O que esperar</h2>
+
+<p>Ao receber sua solicitação, iremos:</p>
+<ul>
+  <li>validar sua identidade com as informações fornecidas;</li>
+  <li>avaliar pendências legais ou contratuais que impeçam a exclusão imediata;</li>
+  <li>confirmar por e-mail quando a exclusão for concluída ou se precisarmos de informações adicionais.</li>
+</ul>
+
+<p>Dados que serão deletados:</p>
+<ul>
+  <li>Todas as informações associadas à sua conta;</li>
+  <li>Relações entre você e grupos de empresa, ou entre você e membros;</li>
+  <li>Quaisquer outros dados necessários para o uso da plataforma.</li>
+</ul>
+
+<p><strong>Atenção:</strong> a exclusão é irreversível. Dados que precisemos reter por obrigação legal ou fiscal poderão ser mantidos por prazo previsto em lei, em forma agregada ou anonimizados quando possível.</p>
+
+
+<!-- END OF TEXT AREA -->
+        </div>
+    </div>
+
+</body>
+</html>
