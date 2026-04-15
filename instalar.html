@@ -11,6 +11,21 @@
             background: #f5f5f5;
             color: #333333;
         }
+        
+        /* 2. Top Red Bar */
+        .top-bar {
+            background-color: #7ADAA5; /* Red color */
+            width: 100%;
+            text-align: center; /* Centers the logo */
+            padding: 40px 0;    /* Vertical padding around logo */
+        }
+
+        /* 3. Logo Styling */
+        .top-bar img {
+            max-height: 80px; /* Limits logo height so it fits well */
+            max-width: 90%;   /* Prevents it from being wider than screen */
+            display: inline-block;
+        }
 
         .template {
             display: none;
@@ -27,7 +42,6 @@
         .template-inner {
             background: white;
             border-radius: 12px;
-            padding: 2rem 3rem;
             box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
             text-align: center;
             max-width: 520px;
@@ -43,7 +57,6 @@
             line-height: 1.6;
         }
         .bn46 {
-          width: 150px;
           height: 50px;
         }
     </style>
@@ -72,11 +85,18 @@
     <main class="template">
         <div class="template-inner">
             <!-- TEMPLATE: Fallback content for non-mobile devices -->
-            <h1>Falta pouco!</h1>
-            <p>Baixe o app Sorteador em seu celular:</p>
-            <div class="store-links" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="/" tabIndex="0"><img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="bn45" /></a>
-                <a href="/" tabIndex="0"><img class="bn46" src="GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil.svg" alt="bn45" /></a>
+            <!-- TOP BAR WITH LOGO -->
+            <div class="top-bar">
+                <!-- REPLACE 'logo.png' WITH YOUR ACTUAL IMAGE FILENAME -->
+                <img src="logo.png" alt="Sorteador Logo">
+            </div>
+            <div style="padding: 2rem 3rem;">
+                <h1>Falta pouco!</h1>
+                <p>Baixe o app Sorteador em seu celular:</p>
+                <div class="store-links" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://apps.apple.com/us/app/sorteador-live/id6759236995" tabIndex="0"><img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="bn45" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=br.com.nucleodigitalagencia.sorteador" tabIndex="0"><img class="bn46" src="GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil.svg" alt="bn45" /></a>
+                </div>
             </div>
             <!-- TEMPLATE: End fallback content -->
         </div>
