@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguarde...</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333333;
+        }
+
+        .template {
+            display: none;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .show-template .template {
+            display: flex;
+        }
+
+        .template-inner {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem 3rem;
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+            text-align: center;
+            max-width: 520px;
+        }
+
+        .template-inner h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .template-inner p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* 2. Top Red Bar */
+        .top-bar {
+            background-color: #7ADAA5; /* Red color */
+            width: 100%;
+            text-align: center; /* Centers the logo */
+            padding: 40px 0;    /* Vertical padding around logo */
+        }
+
+        /* 3. Logo Styling */
+        .top-bar img {
+            max-height: 80px; /* Limits logo height so it fits well */
+            max-width: 90%;   /* Prevents it from being wider than screen */
+            display: inline-block;
+        }
+
+        /* 4. Text Container (Centered Column) */
+        .content-container {
+            max-width: 700px;  /* Limits width for readability */
+            margin: 0 auto;    /* Centers the container horizontally */
+            padding: 40px 20px;
+            color: #000000;    /* Black text */
+        }
+
+        /* 5. The Magic "Raw Text" Styler */
+        .legal-text {
+            line-height: 1.6;      /* Makes it readable */
+            font-size: 16px;
+        }
+        
+        /* Optional: Makes headings look bold even in raw text if you use CAPS */
+        .legal-text strong {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        (function redirectToStore() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isIOSDevice = (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) ||
+                (navigator.platform === 'MacIntel' && typeof navigator.standalone !== 'undefined');
+            var isAndroidDevice = /android/i.test(userAgent);
+
+            if (isIOSDevice) {
+                window.location.replace('https://apps.apple.com/us/app/sorteador-live/id6759236995');
+                return;
+            }
+
+            if (isAndroidDevice) {
+                window.location.replace('https://play.google.com/store/apps/details?id=br.com.nucleodigitalagencia.sorteador');
+                return;
+            }
+
+            document.documentElement.classList.add('show-template');
+        })();
+    </script>
+</head>
+<body>
+    <main class="template">
+        <div class="template-inner">
+            <!-- TOP BAR WITH LOGO -->
+            <div class="top-bar">
+                <!-- REPLACE 'logo.png' WITH YOUR ACTUAL IMAGE FILENAME -->
+                <img src="logo.png" alt="Sorteador Logo">
+            </div>
+        
+            <!-- MAIN CONTENT -->
+            <div class="content-container">
+                <div class="legal-text">
+                <!-- 
+                -----------------------------------------------------------------------
+                PASTE YOUR RAW TEXT BELOW THIS LINE. 
+                Do not worry about <p> tags. 
+                Just hit "Enter" twice to make a paragraph gap.
+                -----------------------------------------------------------------------
+                -->
+                
+                <h1>Sorteador para Empresas</h1>
+                <ul>
+                <li><a href="privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termos.html">Termos de Uso</a></li>
+                </ul>
+                
+                <!-- END OF TEXT AREA -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
